@@ -128,7 +128,7 @@ hr {
 /* P132 chapter6/c06-03-a */
 <style>
 #ch09-3-a .item {
-	border: 1px solid #cccccc;	
+	border: 1px solid #cccccc;
 	width: 300px;
 }
 #ch09-3-a .item h3 {
@@ -165,7 +165,7 @@ hr {
 
 #ch09-3-c .item {
 	border: 1px solid #ccc;
-	
+	padding: 8px;
 	width: 300px;
 }
 #ch09-3-c .item h3 {
@@ -182,7 +182,7 @@ hr {
 /* P137 chapter6/c06-04-a */
 
 #ch09-4-a .item {
-	
+	margin: 16px;
 	border: 1px solid #ccc;
 	padding: 8px;
 	width: 300px;
@@ -199,11 +199,13 @@ hr {
 
 /* ボックスを横に並べる */
 /* P139-P140 chapter6/c06-04-b */
-
-#ch09-4-b 
-
+<style>
+#ch09-4-b .wrapper {
+        overflow: hidden;
+}
 #ch09-4-b .item {
-
+	float: left;
+	margin: 8px 0 8px 8px;
 	border: 1px solid #ccc;
 	padding: 8px;
 	width: 300px;
@@ -217,16 +219,16 @@ hr {
 	font-size: 14px;
 	color: #666;
 }
-
+</style>
 /* ボックスに背景色をつける */
 /* P143 chapter6/c06-05-a */
-
+<style>
 #ch09-5-a .item {
 	margin: 8px;
 	border: 1px solid #ccc;
 	padding: 8px;
 	width: 300px;
-	
+	background-color: #fafafa;
 }
 #ch09-5-a .item h3 {
 	margin: 0.5em 0 0.5em 0;
@@ -237,10 +239,10 @@ hr {
 	font-size: 14px;
 	color: #666;
 }
-
+</style>
 /* ボックスを背景画像で塗りつぶす */
 /* P144 chapter6/c06-05-b */
-
+<style>
 #ch09-5-b {
 	margin: 0;
 }
@@ -249,7 +251,7 @@ hr {
 	border: 1px solid #ccc;
 	padding: 8px;
 	width: 300px;
-	
+	background: url(images/bg1204.pug) #fafafa;
 }
 #ch09-5-b .item h3 {
 	margin: 0.5em 0 0.5em 0;
@@ -260,22 +262,24 @@ hr {
 	font-size: 14px;
 	color: #666;
 }
-
+</style>
 /* 複数の背景画像を指定する */
 /* P148 chapter6/c06-05-c */
-
+<style>
 #ch09-5-c blockquote {
 	margin: 0;
 	padding: 32px;
 	width: 300px;
-	
+	background: url(images/quote-left.png) no-repeat left 10px top 20px, 
+		                url(images/quote-right.png) norepeat right 10px bottom 20px,
+		                #eee;
 }
-
+</style>
 /* ボックスの角を丸くする */
 /* P149 chapter6/c06-05-d */
-
+<style>
 #ch09-5-d blockquote {
-	
+	border-radius: 10px;
 	margin: 0;
 	padding: 32px;
 	width: 300px;
@@ -283,3 +287,4 @@ hr {
 				url(images/quote-right.png) no-repeat right 10px bottom 20px,
 				#eee;
 }
+</style>
